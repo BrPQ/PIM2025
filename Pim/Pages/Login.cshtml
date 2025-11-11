@@ -1,0 +1,27 @@
+@page
+@model PIMIIIWeb_SQL_Login.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<section style="padding:50px 0">
+  <div class="container" style="max-width:420px">
+    <div class="card">
+      <h2>Entrar no InfiniTI PRO</h2>
+      <p class="muted">Use o login e senha criados pelo Gestor.</p>
+      <form method="post">
+        <label>Login</label>
+        <input asp-for="Login" />
+        <label>Senha</label>
+        <input asp-for="Senha" type="password" />
+        <button type="submit" class="btn" style="width:100%;margin-top:6px">Entrar</button>
+      </form>
+      @if (!string.IsNullOrEmpty(Model.MensagemErro))
+      {
+        <p style="color:#f43f5e;margin-top:10px">@Model.MensagemErro</p>
+      }
+      <p class="muted" style="margin-top:12px;font-size:12px">
+        Dica: admin / admin123 · tec1 / 123 · user / 123
+      </p>
+    </div>
+  </div>
+</section>

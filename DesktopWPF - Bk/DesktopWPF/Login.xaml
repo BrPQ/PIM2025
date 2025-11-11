@@ -1,0 +1,142 @@
+﻿<Window x:Class="DesktopWPF.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopWPF"
+        mc:Ignorable="d"
+        Title="Infiniti PRO - Sistema de Suporte" Height="720" Width="1280"
+        Icon="/Images/InfiniTI PRO - Icone Desktop.ico"
+        WindowStartupLocation="CenterScreen"
+        Background="#212121">
+
+    <Window.Resources>
+        <Color x:Key="PrimaryPurpleColor">#6A5ACD</Color>
+        <SolidColorBrush x:Key="PrimaryPurpleBrush" Color="{StaticResource PrimaryPurpleColor}" />
+        <Color x:Key="SecondaryPurpleColor">#836FFF</Color>
+        <SolidColorBrush x:Key="SecondaryPurpleBrush" Color="{StaticResource SecondaryPurpleColor}" />
+
+        <Style x:Key="LabelStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#A0A0A0" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Margin" Value="0,10,0,5" />
+        </Style>
+
+        <Style x:Key="InputTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Padding" Value="10,0" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Background" Value="#3C3C3C" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="CaretBrush" Value="White" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="InputPasswordBoxStyle" TargetType="PasswordBox">
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Padding" Value="10,0" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Background" Value="#3C3C3C" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="CaretBrush" Value="White" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="LoginButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PrimaryPurpleBrush}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource SecondaryPurpleBrush}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/Banner.png" Stretch="UniformToFill" />
+            </Grid.Background>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Border Background="#2C2C2C" CornerRadius="20" Padding="40" 
+                    Width="400"
+                    HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Login" Foreground="White" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30" />
+
+                    <TextBlock Text="Matrícula" Style="{StaticResource LabelStyle}" />
+                    <TextBox x:Name="txtMatricula" Style="{StaticResource InputTextBoxStyle}"
+                             PreviewTextInput="txtMatricula_PreviewTextInput"
+                             PreviewKeyDown="txtMatricula_PreviewKeyDown" />
+
+                    <TextBlock Text="Senha" Style="{StaticResource LabelStyle}" Margin="0,15,0,5" />
+                    <PasswordBox x:Name="txtSenha" Style="{StaticResource InputPasswordBoxStyle}" />
+
+                    <Grid Margin="0,30,0,0" Height="50">
+                        <Button x:Name="btnLogin" Click="btnLogin_Click" Content="Entrar" 
+                                Style="{StaticResource LoginButtonStyle}" IsDefault="True" 
+                                Visibility="Visible"/>
+
+                        <Grid x:Name="LoadingIndicator" Visibility="Collapsed">
+                            <ProgressBar IsIndeterminate="True" Height="50" BorderThickness="0" 
+                                         Background="Transparent" Foreground="{StaticResource PrimaryPurpleBrush}" />
+
+                            <TextBlock Text="Entrando..." Foreground="White" FontSize="18" FontWeight="Bold"
+                                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+
+                        <Border x:Name="ErrorToast" CornerRadius="10" Background="#D9534F"
+                                Padding="10" Visibility="Collapsed"
+                                HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                            <TextBlock x:Name="ErrorToastText" Text="Matrícula ou senha inválidos." 
+                                       Foreground="White" FontSize="14" FontWeight="Bold" TextWrapping="Wrap" 
+                                       TextAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

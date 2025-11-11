@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#303030"
+    android:paddingTop="32dp"
+    tools:context=".EditTicketActivity">
+
+  <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      app:title="Editar"
+      app:titleCentered="true"
+      app:navigationIcon="@drawable/ic_arrow_back"
+      app:titleTextColor="@android:color/white"
+      app:navigationIconTint="@android:color/white" />
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Ticket gerado"
+          android:textColor="#BDBDBD"
+          android:textSize="16sp" />
+
+      <com.google.android.material.button.MaterialButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:minWidth="250dp"
+          android:backgroundTint="#D9534F"
+          android:paddingVertical="16dp"
+          android:text="TICKET#1250"
+          android:textColor="@android:color/white"
+          app:cornerRadius="12dp"
+          android:enabled="false"/> <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Descrição"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+      <EditText
+          android:id="@+id/editTextDescription"
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/rounded_container_background"
+          android:gravity="top|start"
+          android:padding="16dp"
+          android:text="Meu computador não está ligando."
+          android:textColor="#E0E0E0"
+          android:textColorHint="#BDBDBD"
+          android:textSize="16sp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:text="Anexo"
+          android:textColor="@android:color/white"
+          android:textSize="18sp"
+          android:gravity="center" />
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/rounded_container_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+          <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
+              android:src="@android:drawable/ic_menu_gallery"
+              android:layout_marginEnd="24dp"
+              app:tint="#BDBDBD" />
+
+          <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
+              android:src="@android:drawable/ic_menu_agenda"
+              app:tint="#BDBDBD" />
+        </LinearLayout>
+      </FrameLayout>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <Button
+      android:id="@+id/buttonSalvar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Salvar"
+      android:backgroundTint="#4CAF50"
+      android:layout_gravity="end"
+      android:layout_margin="16dp"/>
+
+</LinearLayout>

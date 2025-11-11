@@ -1,0 +1,54 @@
+@page
+@model PIMIIIWeb_SQL_Login.Pages.GestaoUsuariosModel
+@{
+    ViewData["Title"] = "Gestão de Usuários";
+}
+<section class="hero" style="min-height:130px;background:linear-gradient(110deg,#020617 0%,#0f172a 70%);">
+  <div class="hero-inner" style="padding:30px 0 18px">
+    <h1>Gestão de Usuários</h1>
+    <p>Criar login e senha para novos colaboradores, técnicos ou gestores.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Novo usuário</h3>
+        <form method="post">
+          <label>Nome</label>
+          <input asp-for="NovoUsuario.Nome" required />
+          <label>E-mail</label>
+          <input asp-for="NovoUsuario.Email" type="email" required />
+          <label>Login (Matrícula)</label>
+          <input asp-for="NovoUsuario.Login" required />
+          <label>Senha</label>
+          <input asp-for="NovoUsuario.Senha" type="password" required />
+          <label>Perfil</label>
+          <select asp-for="NovoUsuario.Perfil">
+            <option>Tecnico</option>
+            <option>Marketing</option>
+            <option>Contabilidade</option>
+            <option>Gestor</option>
+          </select>
+          <button type="submit" class="btn">Cadastrar usuário</button>
+        </form>
+      </div>
+      <div class="card">
+        <h3>Usuários cadastrados</h3>
+        <table class="table">
+          <thead><tr><th>Nome</th><th>Login</th><th>Perfil</th></tr></thead>
+          <tbody>
+          @foreach (var u in Model.Usuarios)
+          {
+            <tr>
+              <td>@u.Nome</td>
+              <td>@u.Login</td>
+              <td>@u.Perfil</td>
+            </tr>
+          }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

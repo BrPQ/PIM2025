@@ -1,0 +1,428 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:2:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\models\\mensagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\models\\mensagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\models\\mensagempayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\models\\mensagempayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\models\\anexo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\models\\anexo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192663A5-3AF9-DAEB-9C42-FD549661F53F}|..\\GestaoChamados\\GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\controllers\\anexoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192663A5-3AF9-DAEB-9C42-FD549661F53F}|..\\GestaoChamados\\GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192663A5-3AF9-DAEB-9C42-FD549661F53F}|..\\GestaoChamados\\GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192663A5-3AF9-DAEB-9C42-FD549661F53F}|..\\GestaoChamados\\GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\breni\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Main.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DesktopWPF\\obj\\Debug\\net8.0-windows\\Main.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\filenametoiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\filenametoiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\desktopwpf - bk\\desktopwpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED93A051-0520-4BF5-930B-F0A3EEA1075E}|DesktopWPF\\DesktopWPF.csproj|solutionrelative:desktopwpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\App.xaml.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\App.xaml.cs",
+              "RelativeToolTip": "DesktopWPF\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T20:33:13.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MensagemPayload.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\MensagemPayload.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Models\\MensagemPayload.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\MensagemPayload.cs",
+              "RelativeToolTip": "DesktopWPF\\Models\\MensagemPayload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T13:51:04.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Services\\ApiService.cs",
+              "RelativeToolTip": "DesktopWPF\\Services\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T00:22:50.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AnexosController.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\AnexosController.cs",
+              "RelativeDocumentMoniker": "..\\GestaoChamados\\GestaoChamados\\Controllers\\AnexosController.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\AnexosController.cs",
+              "RelativeToolTip": "..\\GestaoChamados\\GestaoChamados\\Controllers\\AnexosController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:59:23.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "..\\GestaoChamados\\GestaoChamados\\Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "..\\GestaoChamados\\GestaoChamados\\Controllers\\TicketsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBZwCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T03:18:26.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Converters.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Converters.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Converters.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Converters.cs",
+              "RelativeToolTip": "DesktopWPF\\Converters.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwCoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:20:08.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\breni\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:30:58.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\GestaoChamados\\GestaoChamados\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\GestaoChamados\\GestaoChamados\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:10:31.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "..\\GestaoChamados\\GestaoChamados\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "..\\GestaoChamados\\GestaoChamados\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAwwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:05:37.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mensagem.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\Mensagem.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Models\\Mensagem.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\Mensagem.cs",
+              "RelativeToolTip": "DesktopWPF\\Models\\Mensagem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:01:32.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.i.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.i.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.i.cs",
+              "RelativeToolTip": "DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.i.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAMwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T17:03:39.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Main.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Main.g.i.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\obj\\Debug\\net8.0-windows\\Main.g.i.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Main.g.i.cs",
+              "RelativeToolTip": "DesktopWPF\\obj\\Debug\\net8.0-windows\\Main.g.i.cs",
+              "ViewState": "AgIAANQBAAAAAAAAAAAQwOYBAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:42:00.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Anexo.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\Anexo.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Models\\Anexo.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\Anexo.cs",
+              "RelativeToolTip": "DesktopWPF\\Models\\Anexo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T14:32:35.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.g.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.cs",
+              "RelativeToolTip": "DesktopWPF\\obj\\Debug\\net8.0-windows\\Login.g.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T17:18:18.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Login.xaml.cs",
+              "RelativeToolTip": "DesktopWPF\\Login.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwFQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T19:03:24.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.xaml",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Main.xaml",
+              "RelativeDocumentMoniker": "DesktopWPF\\Main.xaml",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Main.xaml",
+              "RelativeToolTip": "DesktopWPF\\Main.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-27T18:08:42.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\AssemblyInfo.cs",
+              "RelativeToolTip": "DesktopWPF\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T17:16:01.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAMMUAAAAAAAAAAAwwBEVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-19T16:23:50.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Models\\Ticket.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\Ticket.cs",
+              "RelativeToolTip": "DesktopWPF\\Models\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T16:21:59.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Models\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\LoginResponse.cs",
+              "RelativeToolTip": "DesktopWPF\\Models\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T16:21:37.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Models\\Usuario.cs",
+              "RelativeToolTip": "DesktopWPF\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T16:21:07.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Services\\ApiService.cs",
+              "RelativeToolTip": "DesktopWPF\\Services\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwMQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T16:15:28.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\App.config",
+              "RelativeDocumentMoniker": "DesktopWPF\\App.config",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\App.config",
+              "RelativeToolTip": "DesktopWPF\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T20:03:13.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Main.xaml.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\Main.xaml.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Main.xaml.cs",
+              "RelativeToolTip": "DesktopWPF\\Main.xaml.cs",
+              "ViewState": "AgIAANUCAAAAAAAAAAAmwBgDAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T18:11:27.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FilenameToIconConverter.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\FilenameToIconConverter.cs",
+              "RelativeDocumentMoniker": "DesktopWPF\\FilenameToIconConverter.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\FilenameToIconConverter.cs",
+              "RelativeToolTip": "DesktopWPF\\FilenameToIconConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T22:18:31.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Login.xaml",
+              "RelativeDocumentMoniker": "DesktopWPF\\Login.xaml",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\DesktopWPF - Bk\\DesktopWPF\\Login.xaml",
+              "RelativeToolTip": "DesktopWPF\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-27T18:28:33.583Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

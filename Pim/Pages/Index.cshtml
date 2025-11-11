@@ -1,0 +1,23 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Tempo real";
+}
+<section class="hero">
+  <div class="hero-inner">
+    <span class="badge">InfiniTI PRO · Sistema de Suporte</span>
+    <h1>Monitoramento em tempo real</h1>
+    <p>Acompanhe chamados, gargalos e SLAs em um único painel.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2>Fila atual de chamados</h2>
+        <div class="kpi-row" style="margin:16px 0 28px">
+            <div class="kpi"><label>Em atendimento</label><strong>@Model.EmAtendimentoCount</strong></div>
+            <div class="kpi"><label>Atrasados</label><strong style="color:#f43f5e">@Model.AtrasadosCount</strong></div>
+            <div class="kpi"><label>SLA médio</label><strong>@Model.SlaMedioMinutos min</strong></div>
+            <div class="kpi"><label>Gargalos</label><strong>@Model.GargalosCount</strong></div>
+        </div>
+  </div>
+</section>

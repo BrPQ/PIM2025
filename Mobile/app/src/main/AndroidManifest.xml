@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mobile"
+        android:usesCleartextTraffic="true"> {/* 2. Permite a comunicação com a API local (http) durante o desenvolvimento */}
+
+        {/* Suas activities existentes */}
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AIResponseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewTicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AcceptedTicketDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditTicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TicketDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        {/* 3. Declaração da nova Activity para detalhes de tickets abertos */}
+        <activity
+            android:name=".OpenTicketDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

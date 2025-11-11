@@ -1,0 +1,25 @@
+@page
+@model PIMIIIWeb_SQL_Login.Pages.DashboardsModel
+@{
+    ViewData["Title"] = "Dashboards";
+}
+<section class="hero" style="min-height:120px;background:linear-gradient(130deg,#020617 0%,#0f172a 60%);">
+  <div class="hero-inner" style="padding:28px 0 18px">
+    <h1>Dashboards</h1>
+    <p>Indicadores para tomada de decisão.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="kpi-row">
+      @foreach (var k in Model.Kpis)
+      {
+        <div class="kpi">
+          <label>@k.Label</label>
+          <strong>@k.Valor</strong>
+          <span style="font-size:12px">@k.Obs</span>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+@page
+@model PIMIIIWeb_SQL_Login.Pages.SLAsModel
+@{
+    ViewData["Title"] = "SLAs & Prioridades";
+}
+<section class="hero" style="min-height:120px;background:linear-gradient(120deg,#020617 0%,#0f172a 70%);">
+  <div class="hero-inner" style="padding:30px 0 18px">
+    <h1>SLAs & Prioridades</h1>
+    <p>Configuração simulada de tempos e regras de prioridade.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="card">
+      <h3>SLAs</h3>
+      <table class="table">
+        <thead><tr><th>Nome</th><th>Tempo</th><th>Categoria</th><th>Ativo</th></tr></thead>
+        <tbody>
+        @foreach (var s in Model.Slas)
+        {
+          <tr><td>@s.Nome</td><td>@s.TempoAlvoMin min</td><td>@s.Categoria</td><td>@(s.Ativo ? "✓" : "—")</td></tr>
+        }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

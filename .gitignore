@@ -1,0 +1,10 @@
+# Arquivo de segredos que NUNCA deve ir para o GitHub
+.env
+
+# Arquivos de backup de banco de dados
+*.bak
+
+# Pastas e arquivos de build/dependências comuns (se existirem nos projetos)
+**/bin/
+**/obj/
+node_modules/

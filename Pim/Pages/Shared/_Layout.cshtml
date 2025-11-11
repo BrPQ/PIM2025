@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - InfiniTI PRO</title>
+    <link rel="icon" href="~/img/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="container nav">
+            <div class="brand">
+                <div class="logo">IT</div>
+                <a class="brand-link" asp-page="/Index">InfiniTI PRO</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a asp-page="/Index">Tempo real</a></li>
+                    <li><a asp-page="/Dashboards">Dashboards</a></li>
+                    <li><a asp-page="/SLAs">SLAs</a></li>
+                    @if (User.IsInRole("Gestor") || User.IsInRole("Admin"))
+                    {
+                        <li><a asp-page="/GestaoUsuarios">Usuários</a></li>
+                    }
+                    <li><a asp-page="/LGPD">LGPD</a></li>
+                </ul>
+            </nav>
+            <div class="auth-area">
+                @if (User?.Identity?.IsAuthenticated ?? false)
+                {
+                    <span class="user-pill">👤 @User.Identity?.Name (@User.FindFirst("Perfil")?.Value)</span>
+                    <form method="post" asp-page="/Logout" style="display:inline">
+                        <button type="submit" class="btn small">Sair</button>
+                    </form>
+                }
+                else
+                {
+                    <a class="btn small ghost" asp-page="/Login">Entrar</a>
+                }
+            </div>
+        </div>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <div class="container">
+            <small>© 2025 — InfiniTI PRO – Sistema de Suporte.</small>
+        </div>
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
