@@ -1,49 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\",
+  "WorkspaceRootPath": "C:\\Users\\breni\\Desktop\\Github\\Pim\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\dashboards.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\dashboards.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\relatorios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\relatorios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\gestaousuarios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\gestaousuarios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\relatorios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\relatorios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\gestaousuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\gestaousuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\dashboards.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\dashboards.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\gestaousuarios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\gestaousuarios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\pages\\gestaousuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\gestaousuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\github\\pim\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,15 +70,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAAABYBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-12T14:30:34.035Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T14:24:07.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Relatorios.cshtml",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Relatorios.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Relatorios.cshtml",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Relatorios.cshtml",
+              "RelativeToolTip": "Pages\\Relatorios.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T14:13:02.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Relatorios.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Relatorios.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Relatorios.cshtml.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Relatorios.cshtml.cs",
+              "RelativeToolTip": "Pages\\Relatorios.cshtml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T14:12:40.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Index.cshtml.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAiwGUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -70,11 +134,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -82,11 +146,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "GestaoUsuarios.cshtml",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\GestaoUsuarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\GestaoUsuarios.cshtml",
               "RelativeDocumentMoniker": "Pages\\GestaoUsuarios.cshtml",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\GestaoUsuarios.cshtml",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\GestaoUsuarios.cshtml",
               "RelativeToolTip": "Pages\\GestaoUsuarios.cshtml",
               "ViewState": "AgIAABQAAAAAAAAAAAAAwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -96,22 +160,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwDAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-08T13:47:15.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Dashboards.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Dashboards.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Dashboards.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Dashboards.cshtml.cs",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Dashboards.cshtml.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Dashboards.cshtml.cs",
               "RelativeToolTip": "Pages\\Dashboards.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -119,23 +183,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\Login.cshtml.cs",
               "RelativeToolTip": "Pages\\Login.cshtml.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAA3wIcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAcwIgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T13:33:27.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "GestaoUsuarios.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\GestaoUsuarios.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\GestaoUsuarios.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\GestaoUsuarios.cshtml.cs",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\GestaoUsuarios.cshtml.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Pages\\GestaoUsuarios.cshtml.cs",
               "RelativeToolTip": "Pages\\GestaoUsuarios.cshtml.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -143,11 +207,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\appsettings.json",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -155,23 +219,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Program.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAQwE8AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAcwEoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T20:26:57.03Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -179,11 +243,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Models\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\breni\\Desktop\\Github\\Pim\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

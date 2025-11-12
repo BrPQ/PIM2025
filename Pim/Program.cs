@@ -14,37 +14,47 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// --- NOSSAS MUDANÇAS COMEÇAM AQUI ---
-
-// 1. Permite que o App faça requisições HTTP (para chamar a API)
+// --- Serviços de API e Sessão (Correto) ---
 builder.Services.AddHttpClient();
-
-// 2. Permite que o App acesse o HttpContext (para ler/gravar na Sessão)
 builder.Services.AddHttpContextAccessor();
-
-// 3. Adiciona o serviço de Sessão (onde vamos guardar o Token JWT)
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromHours(8); // Mesmo tempo do token
+    options.IdleTimeout = TimeSpan.FromHours(8);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
 
-// --- FIM DAS NOSSAS MUDANÇAS ---
-
+// --- CONFIGURANDO AS PÁGINAS (REGRA 2) ---
 builder.Services.AddRazorPages(options =>
 {
-    options.Conventions.AuthorizeFolder("/");
+    // 1. REGRA GERAL: Tranca o site todo e exige a política "AcessoGeral"
+    options.Conventions.AuthorizeFolder("/", "AcessoGeral");
+
+    // 2. EXCEÇÃO 1: A página de Login é pública
     options.Conventions.AllowAnonymousToPage("/Login");
-    options.Conventions.AllowAnonymousToPage("/LGPD");
+
+    // 3. EXCEÇÃO 2: A página de Gestão de Usuários exige uma política mais forte
+    options.Conventions.AuthorizePage("/GestaoUsuarios", "AcessoGestao");
 });
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
         options.LoginPath = "/Login";
         options.AccessDeniedPath = "/Login";
     });
-builder.Services.AddAuthorization();
+
+// --- DEFININDO AS POLÍTICAS DE ACESSO (REGRA 2) ---
+builder.Services.AddAuthorization(options =>
+{
+    // Política para o site em geral (Admin, Gestor, Tecnico)
+    options.AddPolicy("AcessoGeral", policy =>
+        policy.RequireRole("Admin", "Gestor", "Tecnico"));
+
+    // Política específica para a página de Gestão de Usuários (Admin, Gestor)
+    options.AddPolicy("AcessoGestao", policy =>
+        policy.RequireRole("Admin", "Gestor"));
+});
 
 var app = builder.Build();
 
@@ -59,10 +69,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// --- MAIS UMA MUDANÇA ---
-// 4. Habilita o uso da Sessão
 app.UseSession();
-// --- FIM DA MUDANÇA ---
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -75,6 +82,5 @@ using (var scope = app.Services.CreateScope())
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     db.Database.EnsureCreated();
 }
-
 
 app.Run();

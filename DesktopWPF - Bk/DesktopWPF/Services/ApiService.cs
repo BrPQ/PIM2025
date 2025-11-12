@@ -62,13 +62,14 @@ namespace DesktopWPF.Services
             throw new HttpRequestException($"Erro ao buscar tickets: {response.StatusCode}");
         }
 
-        public async Task<Ticket> GetTicketByIdAsync(int ticketId)
+        public async Task<TicketDetalheDto> GetTicketByIdAsync(int ticketId)
         {
             HttpResponseMessage response = await _httpClient.GetAsync($"{ApiBaseUrl}/api/tickets/{ticketId}");
             if (response.IsSuccessStatusCode)
             {
                 string content = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<Ticket>(content);
+                // A única mudança é aqui: desserializa para o novo DTO
+                return JsonConvert.DeserializeObject<TicketDetalheDto>(content);
             }
             throw new HttpRequestException($"Erro ao buscar detalhes do ticket: {response.StatusCode}");
         }

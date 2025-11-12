@@ -22,17 +22,23 @@ namespace GestaoChamados.Controllers
             _context = context;
         }
 
-        // CORRIGIDO: Envia 'NomeUsuario' e 'Role' (conserta Desktop/Mobile)
+        // --- MUDANÇA 1: PERMISSÃO ---
+        // Adicionamos "Tecnico" para que o app Desktop possa
+        // baixar a lista de usuários e exibir os nomes/setores corretos.
         [HttpGet]
-        [Authorize(Roles = "Admin, Gestor")]
+        [Authorize(Roles = "Admin, Gestor, Tecnico")]
         public async Task<IActionResult> GetAllUsuarios()
         {
             var usuarios = await _context.Usuarios
                 .Select(u => new
                 {
+                    // --- MUDANÇA 2: DADOS ---
+                    // Adicionamos o 'Id' de volta, que é crucial
+                    // para o app Desktop "linkar" o ticket ao usuário.
+                    Id = u.Id,
                     NomeUsuario = u.NomeUsuario,
-                    Login = u.Matricula, // 'Login' é o nome que o Web App usa para 'Matricula'
-                    Role = u.Role
+                    Login = u.Matricula,
+                    Role = u.Role // Role (que é o Perfil/Setor)
                 })
                 .ToListAsync();
 
@@ -40,7 +46,7 @@ namespace GestaoChamados.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")] // Correto: Técnico não pode criar
         public async Task<IActionResult> CreateUsuario([FromBody] CreateUsuarioRequestDto request)
         {
             var usuarioExistente = await _context.Usuarios.FirstOrDefaultAsync(u => u.Matricula == request.Matricula);
@@ -49,13 +55,12 @@ namespace GestaoChamados.Controllers
                 return Conflict("Já existe um usuário cadastrado com esta matrícula.");
             }
 
-            // CORRIGIDO: Mapeia as propriedades do DTO (NomeUsuario, Role)
             var novoUsuario = new Usuario
             {
-                NomeUsuario = request.NomeUsuario, // <-- CORREÇÃO
+                NomeUsuario = request.NomeUsuario,
                 Matricula = request.Matricula,
                 SenhaHash = BCrypt.Net.BCrypt.HashPassword(request.Senha),
-                Role = request.Role,               // <-- CORREÇÃO
+                Role = request.Role,
                 Email = request.Email,
                 Ativo = true,
                 DataCadastro = DateTime.UtcNow
@@ -66,9 +71,8 @@ namespace GestaoChamados.Controllers
             return StatusCode(201, novoUsuario);
         }
 
-        // CORRIGIDO: Envia 'NomeUsuario' e 'Role' (conserta Desktop/Mobile)
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin, Tecnico")]
+        [Authorize(Roles = "Admin, Tecnico")] // Correto
         public async Task<IActionResult> GetUsuario(int id)
         {
             var usuario = await _context.Usuarios.FindAsync(id);

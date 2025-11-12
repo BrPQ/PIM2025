@@ -1,3 +1,4 @@
+@using System.Security.Claims
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,14 +13,14 @@
     <header class="topbar">
         <div class="container nav">
             <div class="brand">
-                <div class="logo">IT</div>
+                <img src="~/img/favicon.ico" alt="InfiniTI PRO Logo" class="header-logo" />
                 <a class="brand-link" asp-page="/Index">InfiniTI PRO</a>
             </div>
             <nav>
                 <ul>
                     <li><a asp-page="/Index">Tempo real</a></li>
                     <li><a asp-page="/Dashboards">Dashboards</a></li>
-                    <li><a asp-page="/SLAs">SLAs</a></li>
+                    <li><a asp-page="/Relatorios">Relatórios</a></li>
                     @if (User.IsInRole("Gestor") || User.IsInRole("Admin"))
                     {
                         <li><a asp-page="/GestaoUsuarios">Usuários</a></li>
@@ -30,14 +31,14 @@
             <div class="auth-area">
                 @if (User?.Identity?.IsAuthenticated ?? false)
                 {
-                    <span class="user-pill">👤 @User.Identity?.Name (@User.FindFirst("Perfil")?.Value)</span>
+                    <span class="user-pill">👤 @User.Identity?.Name (@User.FindFirst(ClaimTypes.Role)?.Value)</span>
                     <form method="post" asp-page="/Logout" style="display:inline">
                         <button type="submit" class="btn small">Sair</button>
                     </form>
                 }
                 else
                 {
-                    <a class="btn small ghost" asp-page="/Login">Entrar</a>
+                    <a class="btn small" asp-page="/Login">Entrar</a>
                 }
             </div>
         </div>

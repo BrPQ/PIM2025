@@ -27,7 +27,7 @@ namespace DesktopWPF
         private HubConnection _chatHubConnection;   // Conexão do Chat (dinâmica)
         private string _currentChatGroup = "";      // Para saber de qual grupo de chat sair
         private List<Ticket> _allTickets;
-        private Ticket _ticketDetalhadoAtual;
+        private TicketDetalheDto _ticketDetalhadoAtual;
         private Ticket _chatSelecionadoAtual;
         private List<string> _anexosParaUpload = new List<string>();
         private Button _lastSelectedContactButton = null;
@@ -201,12 +201,22 @@ namespace DesktopWPF
 
             try
             {
+                // 1. Faz UMA ÚNICA chamada que já retorna TUDO (Ticket + Usuário)
                 _ticketDetalhadoAtual = await _apiService.GetTicketByIdAsync(ticketContext.Id);
-                var usuarioDoTicket = await _apiService.GetUserByIdAsync(_ticketDetalhadoAtual.UsuarioId);
 
+                // 2. A chamada GetUserByIdAsync() FOI REMOVIDA (não é mais necessária)
+
+                // 3. Preenche a UI com os dados DIRETOS do DTO
                 txtDetailTicketId.Text = $"TICKET#{_ticketDetalhadoAtual.Id}";
                 txtDetailDescricao.Text = _ticketDetalhadoAtual.Descricao;
-                txtDetailUsuario.Text = usuarioDoTicket?.NomeUsuario ?? "Usuário não encontrado";
+
+                // --- AQUI ESTÁ A CORREÇÃO DO BUG ---
+                txtDetailUsuario.Text = _ticketDetalhadoAtual.NomeUsuario;
+
+                // Supondo que o TextBlock do Setor no seu XAML se chama 'txtDetailSetor':
+                txtDetailSetor.Text = _ticketDetalhadoAtual.PerfilUsuario; // Usando o novo campo!
+                                                                           // ------------------------------------
+
                 var anexos = await _apiService.GetAnexosByTicketIdAsync(_ticketDetalhadoAtual.Id, "Usuario");
                 ItemsControlTicketAnexos.ItemsSource = anexos;
 

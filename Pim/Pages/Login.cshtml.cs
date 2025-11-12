@@ -6,17 +6,18 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 // --- NOSSAS MUDANÇAS ---
 using System.Net.Http;
-using System.Net.Http.Json; // Precisa do package System.Net.Http.Json
+using System.Net.Http.Json;
 using Microsoft.Extensions.Configuration;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Http;
+using System.Collections.Generic; // <-- ADICIONADO PARA A LISTA
 // --- FIM DAS MUDANÇAS ---
 
 namespace PIMIIIWeb_SQL_Login.Pages
 {
     public class LoginModel : PageModel
     {
-        // --- SUBSTITUÍMOS O DBCONTEXT ---
+        // --- Construtor e Propriedades (Sem mudanças) ---
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
@@ -27,24 +28,21 @@ namespace PIMIIIWeb_SQL_Login.Pages
             _configuration = configuration;
             _httpContextAccessor = httpContextAccessor;
         }
-        // --- FIM DA SUBSTITUIÇÃO ---
 
         [BindProperty]
-        public string Login { get; set; } = string.Empty; // <-- Lembre-se: Isso será enviado como "Matricula"
-
+        public string Login { get; set; } = string.Empty;
         [BindProperty]
         public string Senha { get; set; } = string.Empty;
-
         public string MensagemErro { get; set; } = string.Empty;
 
         public void OnGet()
         {
         }
+        // --- Fim do Construtor ---
 
         public async Task<IActionResult> OnPostAsync()
         {
-            // 1. Criar o objeto de requisição para a API
-            // (Assumindo que "Login" da página é a "Matricula" da API)
+            // 1. Criar o objeto de requisição
             var loginRequest = new LoginRequestDto
             {
                 Matricula = this.Login,
@@ -52,7 +50,7 @@ namespace PIMIIIWeb_SQL_Login.Pages
             };
 
             var client = _httpClientFactory.CreateClient();
-            var apiUrl = _configuration["ApiSettings:BaseUrl"] + "/api/auth/login"; // Pega a URL do appsettings
+            var apiUrl = _configuration["ApiSettings:BaseUrl"] + "/api/auth/login";
 
             try
             {
@@ -65,7 +63,7 @@ namespace PIMIIIWeb_SQL_Login.Pages
                     return Page();
                 }
 
-                // 3. Ler a resposta da API (Token e Usuário)
+                // 3. Ler a resposta da API
                 var responseData = await response.Content.ReadFromJsonAsync<LoginResponseDto>();
                 if (responseData == null || string.IsNullOrEmpty(responseData.Token) || responseData.Usuario == null)
                 {
@@ -73,18 +71,27 @@ namespace PIMIIIWeb_SQL_Login.Pages
                     return Page();
                 }
 
+                // --- NOVA VERIFICAÇÃO DE PERMISSÃO (REGRA 1) ---
+                var userRole = responseData.Usuario.Role;
+                var permittedRoles = new List<string> { "Admin", "Gestor", "Tecnico" };
+
+                // Se o perfil do usuário NÃO ESTIVER na lista, bloqueia o login.
+                if (!permittedRoles.Contains(userRole))
+                {
+                    MensagemErro = "Você não tem permissão de acesso a este sistema.";
+                    return Page();
+                }
+                // --- FIM DA VERIFICAÇÃO ---
+
                 // 4. GUARDAR O TOKEN NA SESSÃO
-                // O "crachá" para falar com a API no futuro
                 _httpContextAccessor.HttpContext.Session.SetString("jwt", responseData.Token);
 
                 // 5. CRIAR O COOKIE DE LOGIN DO WEBAPP
-                // (Usando os dados do usuário que a API retornou)
                 var claims = new[]
                 {
                     new Claim(ClaimTypes.Name, responseData.Usuario.NomeUsuario),
                     new Claim(ClaimTypes.NameIdentifier, responseData.Usuario.Id.ToString()),
                     new Claim(ClaimTypes.Role, responseData.Usuario.Role),
-                    // Adicionei a matrícula aqui, pode ser útil
                     new Claim("Matricula", responseData.Usuario.Matricula)
                 };
 
@@ -103,27 +110,21 @@ namespace PIMIIIWeb_SQL_Login.Pages
         }
     }
 
-    // --- CLASSES AUXILIARES PARA A API ---
-    // (Precisa criar elas para o C# entender a requisição e a resposta)
-
+    // --- CLASSES AUXILIARES (Sem mudanças) ---
     public class LoginRequestDto
     {
         public string Matricula { get; set; }
         public string Senha { get; set; }
     }
-
     public class LoginResponseDto
     {
-        [JsonPropertyName("token")] // Garante que vai ler "token" minúsculo
+        [JsonPropertyName("token")]
         public string Token { get; set; }
-
-        [JsonPropertyName("usuario")] // Garante que vai ler "usuario" minúsculo
+        [JsonPropertyName("usuario")]
         public UsuarioApiDto Usuario { get; set; }
     }
-
     public class UsuarioApiDto
     {
-        // As propriedades aqui devem bater EXATAMENTE com o que a API retorna
         [JsonPropertyName("id")]
         public int Id { get; set; }
         [JsonPropertyName("nomeUsuario")]

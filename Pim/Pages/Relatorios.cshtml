@@ -1,0 +1,54 @@
+@page
+@model PIMIIIWeb_SQL_Login.Pages.RelatoriosModel
+@{
+    ViewData["Title"] = "Relatórios";
+}
+<section class="hero" style="min-height:120px;background:linear-gradient(120deg,#020617 0%,#0f172a 70%);">
+    <div class="hero-inner" style="padding:30px 0 18px">
+        <h1>Relatórios de Tickets</h1>
+        <p>Exporte o histórico de tickets finalizados e cancelados.</p>
+    </div>
+</section>
+<section>
+    <div class="container">
+
+        <div style="margin-bottom: 20px; text-align: right;">
+            <form method="post">
+                <button type="submit" asp-page-handler="ExportarExcel" class="btn">Exportar para Excel</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Histórico de Tickets</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Ticket #</th>
+                        <th>Título</th>
+                        <th>Status</th>
+                        <th>Abertura</th>
+                        <th>Profissional</th>
+                        <th>Finalização</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var ticket in Model.Tickets)
+                    {
+                        <tr>
+                            <td>@ticket.Id</td>
+                            <td>@ticket.Titulo</td>
+                            <td>@ticket.Status</td>
+                            <td>@ticket.DataAbertura.ToString("g")</td>
+                            <td>@(ticket.ProfissionalDesignado ?? "N/A")</td>
+                            <td>@(ticket.DataFinalizacao?.ToString("g") ?? "N/A")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @if (Model.Tickets.Count == 0)
+            {
+                <p style="text-align: center; margin-top: 20px;">Nenhum ticket finalizado ou cancelado encontrado.</p>
+            }
+        </div>
+    </div>
+</section>

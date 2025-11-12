@@ -12,7 +12,7 @@ namespace GestaoChamados.Controllers
     [Route("api/[controller]")]
     [ApiController]
     // Apenas Admins e Gestores podem ver o dashboard
-    [Authorize(Roles = "Admin, Gestor")]
+    [Authorize(Roles = "Admin, Gestor, Tecnico")]
     public class DashboardController : ControllerBase
     {
         private readonly ApiDbContext _context;
