@@ -67,12 +67,12 @@ public class EditTicketActivity extends AppCompatActivity {
                 return;
             }
 
-            // NOVO: Chama o método para salvar as alterações na API
+
             updateTicketOnApi(newDescription);
         });
     }
 
-    // --- NOVO MÉTODO PARA ATUALIZAR VIA API ---
+
     private void updateTicketOnApi(String newDescription) {
         // Desabilita o botão para evitar cliques duplos
         buttonSalvar.setEnabled(false);
@@ -80,8 +80,6 @@ public class EditTicketActivity extends AppCompatActivity {
 
         String url = ApiConfig.BASE_URL + "/api/Tickets/" + currentTicket.getChamadoId();
 
-        // Monta o corpo da requisição PUT.
-        // É importante reenviar todos os dados que a API espera para uma atualização.
         final JSONObject ticketData = new JSONObject();
         try {
             ticketData.put("chamadoId", currentTicket.getChamadoId());
@@ -90,14 +88,12 @@ public class EditTicketActivity extends AppCompatActivity {
             ticketData.put("status", currentTicket.getStatus()); // Reenvia o status original
             ticketData.put("profissionalDesignado", currentTicket.getProfessionalName()); // Reenvia o profissional
             ticketData.put("solucao", currentTicket.getSolucao()); // Reenvia a solução
-            // Adicione outros campos se sua API exigir
         } catch (JSONException e) {
             e.printStackTrace();
             resetButtonState();
             return;
         }
 
-        // Usa StringRequest para a requisição PUT, que não espera uma resposta JSON
         StringRequest stringRequest = new StringRequest(Request.Method.PUT, url,
                 response -> {
                     Toast.makeText(this, "Ticket atualizado com sucesso!", Toast.LENGTH_SHORT).show();

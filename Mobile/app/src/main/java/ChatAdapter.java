@@ -17,7 +17,6 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MessageViewHol
 
     @Override
     public int getItemViewType(int position) {
-        // A mágica acontece aqui: se o autor não for "Tecnico", é uma mensagem enviada.
         if (!"Tecnico".equalsIgnoreCase(messageList.get(position).getAuthorRole())) {
             return VIEW_TYPE_SENT;
         } else {

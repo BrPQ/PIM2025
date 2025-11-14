@@ -28,8 +28,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.CompletableFuture; // (Necessário para o token)
-import io.reactivex.Single; // (Necessário para o token)
+import java.util.concurrent.CompletableFuture;
+import io.reactivex.Single;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -61,7 +61,7 @@ public class HomeActivity extends AppCompatActivity {
         buttonNotifications.setOnClickListener(v -> showNotificationDialog());
 
         setupRecyclerView();
-        iniciarConexaoSignalR(); // <-- Este método foi MODIFICADO
+        iniciarConexaoSignalR();
 
         chipAberto.setOnClickListener(v -> showOpenTickets());
         chipAceito.setOnClickListener(v -> showAcceptedTickets());
@@ -106,7 +106,7 @@ public class HomeActivity extends AppCompatActivity {
         recyclerViewTickets.setAdapter(ticketAdapter);
     }
 
-    // --- MÉTODO MODIFICADO (COM CORREÇÕES) ---
+
     private void iniciarConexaoSignalR() {
         String token = SessionManager.getInstance().getAuthToken();
         if (token == null) {
@@ -117,9 +117,7 @@ public class HomeActivity extends AppCompatActivity {
                 .withAccessTokenProvider(Single.just(token != null ? token : ""))
                 .build();
 
-        // --- CORREÇÃO APLICADA AQUI ---
-        // Trocamos ticket.id por ticket.getChamadoId()
-        // Mantivemos ticket.getStatus() (pois ele existe no seu código)
+
         hubConnection.on("ReceberAtualizacaoTicket", (ticket) -> {
             String fullMessage = "O ticket #" + ticket.getChamadoId() + " foi atualizado para: " + ticket.getStatus();
             handleRealTimeUpdate("Um ticket foi atualizado!", fullMessage);
@@ -129,7 +127,7 @@ public class HomeActivity extends AppCompatActivity {
             String fullMessage = "Um novo ticket foi criado: #" + ticket.getChamadoId();
             handleRealTimeUpdate("Novo ticket recebido!", fullMessage);
         }, Ticket.class);
-        // --- FIM DA CORREÇÃO ---
+
 
         hubConnection.on("ReceberTicketDeletado", (ticketId) -> {
             String fullMessage = "O ticket #" + ticketId + " foi removido.";
@@ -145,7 +143,7 @@ public class HomeActivity extends AppCompatActivity {
             Log.e("SignalR", "Erro geral: " + e.getMessage());
         }
     }
-    // --- FIM DO MÉTODO MODIFICADO ---
+
 
 
     private void handleRealTimeUpdate(String toastMessage, String notificationMessage) {
@@ -160,7 +158,7 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    // --- MÉTODOS NOVOS ADICIONADOS ---
+
 
     private void updateNotificationBell() {
         if (notificationMessages.isEmpty()) {
@@ -190,7 +188,7 @@ public class HomeActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-    // --- FIM DOS MÉTODOS NOVOS ---
+
 
 
     private void refreshTickets() {

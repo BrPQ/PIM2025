@@ -1,4 +1,4 @@
-package com.example.mobile; // Verifique seu nome de pacote
+package com.example.mobile;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -25,8 +25,7 @@ public class MensagemPayload {
     @SerializedName("dataEnvio")
     private String dataEnvio;
 
-    // --- Getters e Setters ---
-    // (Necessários para o GSON/SignalR)
+
 
     public int getMensagemId() { return mensagemId; }
     public void setMensagemId(int mensagemId) { this.mensagemId = mensagemId; }

@@ -9,7 +9,7 @@ public class ChatRepository {
 
     private ChatRepository() {
         conversationWithWillian = new ArrayList<>();
-        // Vamos adicionar uma mensagem de exemplo do profissional
+
     }
 
     public static synchronized ChatRepository getInstance() {

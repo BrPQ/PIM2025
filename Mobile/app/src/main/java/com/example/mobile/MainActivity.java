@@ -48,10 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void performLogin(String matricula, String senha) {
-        // --- ANIMAÇÃO INICIA AQUI ---
         buttonLogin.setEnabled(false);
         buttonLogin.setText("Entrando...");
-        // --------------------------
+
 
         String url = ApiConfig.BASE_URL + "/api/auth/login";
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -73,25 +72,25 @@ public class MainActivity extends AppCompatActivity {
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                             startActivity(intent);
                             finish();
-                            // Não precisamos resetar o botão aqui, pois a tela será fechada
+
                         } else {
                             Toast.makeText(MainActivity.this, "Resposta inválida do servidor.", Toast.LENGTH_SHORT).show();
-                            resetButtonState(); // Reseta o botão em caso de erro de parsing
+                            resetButtonState();
                         }
                     } catch (Exception e) {
                         Toast.makeText(MainActivity.this, "Erro ao processar a resposta.", Toast.LENGTH_SHORT).show();
-                        resetButtonState(); // Reseta o botão em caso de erro de parsing
+                        resetButtonState();
                     }
                 },
                 error -> {
                     Toast.makeText(MainActivity.this, "Matrícula ou senha inválida.", Toast.LENGTH_SHORT).show();
-                    resetButtonState(); // Reseta o botão em caso de erro da API
+                    resetButtonState();
                 });
 
         queue.add(jsonObjectRequest);
     }
 
-    // --- NOVO MÉTODO PARA RESTAURAR O BOTÃO ---
+
     private void resetButtonState() {
         buttonLogin.setEnabled(true);
         buttonLogin.setText("Entrar");

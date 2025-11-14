@@ -25,12 +25,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-
-// --- IMPORTS DO SIGNALR E RXJAVA ---
 import com.microsoft.signalr.HubConnection;
 import com.microsoft.signalr.HubConnectionBuilder;
 import com.microsoft.signalr.HubConnectionState;
-import io.reactivex.Single; // <-- IMPORT NECESSÁRIO PARA A CORREÇÃO
+import io.reactivex.Single;
 
 public class ChatActivity extends AppCompatActivity {
 
@@ -153,7 +151,6 @@ public class ChatActivity extends AppCompatActivity {
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, postData,
                 response -> {
-                    // Não fazemos mais fetchMessages() aqui.
                     // O SignalR cuidará de receber a mensagem de volta.
                     Log.d("SendMessage", "Mensagem enviada com sucesso. Aguardando SignalR.");
                 },
@@ -188,13 +185,11 @@ public class ChatActivity extends AppCompatActivity {
 
         // Constrói a conexão com o Hub
         hubConnection = HubConnectionBuilder.create(ApiConfig.BASE_URL + "/chathub")
-                // CORREÇÃO: Usamos Single.just() do RxJava para prover o token
                 .withAccessTokenProvider(Single.just(token))
                 .build();
 
         // *** OUVINTE (LISTENER) ***
         // Ouve o evento "ReceberNovaMensagem" que definimos na API
-        // (Certifique-se que o MensagemPayload.java foi criado e está no mesmo pacote)
         hubConnection.on("ReceberNovaMensagem", (payload) -> {
             Log.d("SignalR", "Nova mensagem recebida: " + payload.getConteudo());
 
@@ -205,18 +200,16 @@ public class ChatActivity extends AppCompatActivity {
                     payload.getAuthorRole()
             );
 
-            // IMPORTANTE: O SignalR roda em outra thread.
-            // Para atualizar a UI (Adapter/RecyclerView), precisamos voltar para a Thread Principal.
             runOnUiThread(() -> {
                 messageList.add(newMessage);
                 chatAdapter.notifyItemInserted(messageList.size() - 1);
                 recyclerViewChat.scrollToPosition(messageList.size() - 1);
             });
 
-        }, MensagemPayload.class); // <-- A classe DTO que você criou
+        }, MensagemPayload.class);
 
 
-        // Inicia a conexão (de forma assíncrona) usando o padrão RxJava
+
         hubConnection.start().subscribe(
                 () -> { // OnComplete (sucesso na conexão)
                     Log.d("SignalR", "Conexão com Hub estabelecida.");
@@ -244,9 +237,7 @@ public class ChatActivity extends AppCompatActivity {
         return true;
     }
 
-    /**
-     * Limpa a conexão com o SignalR ao fechar a Activity.
-     */
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

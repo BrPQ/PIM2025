@@ -51,10 +51,9 @@ public class AcceptedTicketDetailActivity extends AppCompatActivity {
 
         buttonTicketNumber.setText("TICKET#" + ticket.getChamadoId());
 
-        // --- CORREÇÃO APLICADA AQUI ---
-        // Usamos o nome correto do método: getProfessionalName()
+
         chipProfessional.setText(ticket.getProfessionalName());
-        // -----------------------------
+
 
         chipStatus.setText(ticket.getStatus());
         textViewDescription.setText(ticket.getDescription());

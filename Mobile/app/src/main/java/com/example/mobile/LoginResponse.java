@@ -1,6 +1,6 @@
 package com.example.mobile;
 
-import com.google.gson.annotations.SerializedName; // <-- Adicione este import
+import com.google.gson.annotations.SerializedName;
 
 public class LoginResponse {
 

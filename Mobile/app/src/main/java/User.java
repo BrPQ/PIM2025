@@ -18,7 +18,7 @@ public class User implements Serializable {
     @SerializedName("role")
     private String perfil;
 
-    // Getters
+
     public int getId() {
         return usuarioId;
     }

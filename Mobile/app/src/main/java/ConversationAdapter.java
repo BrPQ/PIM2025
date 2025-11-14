@@ -47,7 +47,7 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
 
     static class ConversationViewHolder extends RecyclerView.ViewHolder {
         private final TextView textViewProfessionalName;
-        private final TextView textViewLastMessage; // Usaremos este campo para o título do ticket
+        private final TextView textViewLastMessage;
 
         public ConversationViewHolder(@NonNull View itemView) {
             super(itemView);

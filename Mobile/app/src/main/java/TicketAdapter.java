@@ -56,12 +56,9 @@ public class TicketAdapter extends RecyclerView.Adapter<TicketAdapter.TicketView
         public void bind(final Ticket ticket, final OnTicketClickListener listener) {
             ticketButton.setText("TICKET#" + ticket.getChamadoId());
 
-            // --- CORREÇÃO APLICADA AQUI ---
-            // Em vez de colocar o clique na view inteira (itemView),
-            // colocamos diretamente no botão que o usuário vê. Isso garante
-            // que a área de clique seja exatamente a área do botão vermelho.
+
             ticketButton.setOnClickListener(v -> listener.onTicketClick(ticket));
-            // --- FIM DA CORREÇÃO ---
+
         }
     }
 }

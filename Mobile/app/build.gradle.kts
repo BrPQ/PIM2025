@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.mobile"
-    compileSdk = 36 // Se seu Android Studio reclamar, pode ajustar para 34 ou a versão mais recente que você tiver instalada
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.mobile"
         minSdk = 24
-        targetSdk = 36 // Pode ajustar para 34 se necessário
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -45,7 +45,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.9.0")
 
     // Dependência para a comunicação em tempo real com SignalR
-    implementation("com.microsoft.signalr:signalr:5.0.10") // Verifique se há uma versão mais recente se desejar
+    implementation("com.microsoft.signalr:signalr:5.0.10")
 
     implementation("io.reactivex.rxjava2:rxjava:2.2.21")
 

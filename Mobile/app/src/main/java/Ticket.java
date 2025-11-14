@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 public class Ticket implements Serializable {
 
-    // A anotação agora procura pelo campo "id", que é o que sua API envia.
+    // A anotação agora procura pelo campo "id", que é o que a API envia.
     @SerializedName("id")
     private int chamadoId;
 
@@ -21,13 +21,12 @@ public class Ticket implements Serializable {
     @SerializedName("profissionalDesignado")
     private String profissionalDesignado;
 
-    // --- CORREÇÃO APLICADA AQUI ---
-    // Removido o hífen do nome da anotação.
+
     @SerializedName("solucao")
     private String solucao;
-    // -----------------------------
 
-    // Getters
+
+
     public int getChamadoId() { return chamadoId; }
     public String getTitulo() { return titulo; }
     public String getDescription() { return descricao; }

@@ -15,9 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile"
-        android:usesCleartextTraffic="true"> {/* 2. Permite a comunicação com a API local (http) durante o desenvolvimento */}
+        android:usesCleartextTraffic="true">
 
-        {/* Suas activities existentes */}
+
         <activity
             android:name=".ChatActivity"
             android:exported="false" />
