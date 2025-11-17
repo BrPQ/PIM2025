@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "..\\GestaoChamados\\GestaoChamados\\GestaoChamados.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "DesktopWPF\\DesktopWPF.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

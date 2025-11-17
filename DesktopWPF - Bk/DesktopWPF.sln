@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopWPF", "DesktopWPF\DesktopWPF.csproj", "{ED93A051-0520-4BF5-930B-F0A3EEA1075E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoChamados", "..\GestaoChamados\GestaoChamados\GestaoChamados.csproj", "{192663A5-3AF9-DAEB-9C42-FD549661F53F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED93A051-0520-4BF5-930B-F0A3EEA1075E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED93A051-0520-4BF5-930B-F0A3EEA1075E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED93A051-0520-4BF5-930B-F0A3EEA1075E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED93A051-0520-4BF5-930B-F0A3EEA1075E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192663A5-3AF9-DAEB-9C42-FD549661F53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192663A5-3AF9-DAEB-9C42-FD549661F53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192663A5-3AF9-DAEB-9C42-FD549661F53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192663A5-3AF9-DAEB-9C42-FD549661F53F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {222C0842-DD20-496E-BBB4-3DDC983361D7}
+	EndGlobalSection
+EndGlobal

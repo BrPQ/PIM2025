@@ -42,8 +42,6 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
-
-        {/* 3. Declaração da nova Activity para detalhes de tickets abertos */}
         <activity
             android:name=".OpenTicketDetailActivity"
             android:exported="false" />

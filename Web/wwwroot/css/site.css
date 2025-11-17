@@ -97,7 +97,7 @@ nav a {
     min-height: 250px;
     display: flex;
     align-items: flex-end;
-    background: linear-gradient(90deg, rgba(2,6,23,.85) 0%, rgba(2,6,23,.4) 50%, rgba(2,6,23,0) 100%), url('/img/Banner.png') center/cover no-repeat
+    background: linear-gradient(90deg, #020617 0%, #0f172a 100%); 
 }
 
 .hero-inner {
@@ -288,4 +288,20 @@ footer {
     max-width: 150px;
     height: auto;
     margin: 20px auto;
+}
+
+.login-background {
+    background: url('/img/Banner.png') center/cover no-repeat;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-background .card {
+    background: rgba(15, 23, 42, 0.95);
+}
+
+.login-background .card h2 {
+    text-align: center;
 }
