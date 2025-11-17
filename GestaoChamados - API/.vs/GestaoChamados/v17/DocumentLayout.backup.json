@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\gestaochamados.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|solutionrelative:gestaochamados\\gestaochamados.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|solutionrelative:gestaochamados\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|solutionrelative:gestaochamados\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\dtos\\ticketdetalhedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|solutionrelative:gestaochamados\\dtos\\ticketdetalhedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|solutionrelative:gestaochamados\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|solutionrelative:gestaochamados\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\gestaochamados.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|solutionrelative:gestaochamados\\gestaochamados.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9509022C-2C4F-42D3-B15B-C30D594114FC}|GestaoChamados\\GestaoChamados.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\gestaochamados\\gestaochamados\\dtos\\dashboardkpidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TicketDetalheDto.cs",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\DTOs\\TicketDetalheDto.cs",
               "RelativeDocumentMoniker": "GestaoChamados\\DTOs\\TicketDetalheDto.cs",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "GestaoChamados\\Controllers\\DashboardController.cs",
@@ -122,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Tickets.cs",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Models\\Tickets.cs",
               "RelativeDocumentMoniker": "GestaoChamados\\Models\\Tickets.cs",
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "GestaoChamados\\Models\\Usuario.cs",
@@ -170,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "GestaoChamados\\Controllers\\UsuariosController.cs",
@@ -182,20 +182,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TicketsController.cs",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\TicketsController.cs",
               "RelativeDocumentMoniker": "GestaoChamados\\Controllers\\TicketsController.cs",
               "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Controllers\\TicketsController.cs",
               "RelativeToolTip": "GestaoChamados\\Controllers\\TicketsController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAcwGAAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwGAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T13:24:54.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\appsettings.json",
               "RelativeDocumentMoniker": "GestaoChamados\\appsettings.json",
@@ -203,19 +203,21 @@
               "RelativeToolTip": "GestaoChamados\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-07T20:54:34.464Z"
+              "WhenOpened": "2025-11-07T20:54:34.464Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "GestaoChamados.http",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\GestaoChamados.http",
               "RelativeDocumentMoniker": "GestaoChamados\\GestaoChamados.http",
               "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\GestaoChamados.http",
               "RelativeToolTip": "GestaoChamados\\GestaoChamados.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-11-07T20:54:29.037Z"
+              "WhenOpened": "2025-11-07T20:54:29.037Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -231,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\GestaoChamados\\GestaoChamados\\Program.cs",
               "RelativeDocumentMoniker": "GestaoChamados\\Program.cs",

@@ -142,7 +142,7 @@ namespace GestaoChamados.Controllers
 
             if (ticketExistente.Status != "Finalizado" && request.Status == "Finalizado")
             {
-                ticketExistente.DataFinalizacao = DateTime.UtcNow;
+                ticketExistente.DataFinalizacao = DateTime.Now;
             }
 
             ticketExistente.Status = request.Status;
