@@ -1,19 +1,23 @@
+/* :root é onde definimos as VARIÁVEIS GLOBAIS do CSS. 
+   Isso permite mudar a cor do site inteiro alterando apenas uma linha aqui.
+   Mostra organização e facilidade de manutenção. */
 :root {
-    --bg: #020617;
-    --card: rgba(15,23,42,.35);
-    --muted: #9aa3b2;
-    --text: #fff;
-    --brand: #6aa5ff;
-    --brand-2: #7ef0d2;
-    --radius: 16px;
-    --maxw: 1180px;
+    --bg: #020617; /* Fundo Dark (Azul muito escuro) */
+    --card: rgba(15,23,42,.35); /* Cor dos cartões com transparência */
+    --muted: #9aa3b2; /* Texto secundário (cinza) */
+    --text: #fff; /* Texto principal (branco) */
+    --brand: #6aa5ff; /* Azul da marca (Primary Color) */
+    --brand-2: #7ef0d2; /* Verde Água (Secondary Color - usado no gradiente) */
+    --radius: 16px; /* Arredondamento padrão das bordas */
+    --maxw: 1180px; /* Largura máxima do site (para não esticar em monitores 4k) */
 }
 
+/* Reset básico para garantir que o tamanho dos elementos inclua a borda (evita quebra de layout) */
 * {
     box-sizing: border-box
 }
 
-
+/* Garante que a página ocupe 100% da altura da tela, mesmo se tiver pouco conteúdo */
 html {
     height: 100%;
 }
@@ -21,38 +25,43 @@ html {
 body {
     margin: 0;
     font-family: Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    background: var(--bg);
+    background: var(--bg); /* Usa a variável definida lá em cima */
     color: var(--text);
     line-height: 1.6;
+    /* TÉCNICA DO STICKY FOOTER:
+       Usamos Flexbox vertical para garantir que o rodapé (footer) 
+       sempre fique no final da página, empurrado pelo 'main'. */
     display: flex;
     flex-direction: column;
-    min-height: 100%; 
+    min-height: 100%;
 }
 
-
+/* O conteúdo principal cresce para ocupar todo o espaço vazio, empurrando o footer para baixo */
 main {
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
+/* Container centralizado que limita a largura do conteúdo */
 .container {
     max-width: var(--maxw);
-    margin: 0 auto;
+    margin: 0 auto; /* Centraliza horizontalmente */
     padding: 0 20px
 }
 
+/* BARRA DE NAVEGAÇÃO COM EFEITO "GLASSMORPHISM" (Vidro Fosco) */
 .topbar {
-    position: sticky;
+    position: sticky; /* Faz a barra grudar no topo ao rolar a página */
     top: 0;
-    z-index: 50;
-    background: rgba(2,6,23,.5);
-    backdrop-filter: blur(10px);
+    z-index: 50; /* Garante que fique acima de tudo */
+    background: rgba(2,6,23,.5); /* Fundo semitransparente */
+    backdrop-filter: blur(10px); /* O TRUQUE: Desfoca o que passa por trás da barra */
     border-bottom: 1px solid rgba(255,255,255,.04)
 }
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Separa Logo (esq) e Menu (dir) */
     padding: 14px 0
 }
 
@@ -61,7 +70,6 @@ main {
     gap: 10px;
     align-items: center
 }
-
 
 .logo {
     display: none;
@@ -73,6 +81,7 @@ main {
     font-weight: 600
 }
 
+/* Menu de Links */
 nav ul {
     display: flex;
     gap: 14px;
@@ -85,19 +94,22 @@ nav a {
     color: var(--text);
     text-decoration: none;
     padding: 6px 12px;
-    border-radius: 999px
+    border-radius: 999px /* Pílula completa */
 }
 
+    /* Efeito de hover sutil */
     nav a:hover {
         background: rgba(255,255,255,.12)
     }
 
+/* SEÇÃO HERO (Banner Principal) */
 .hero {
     position: relative;
     min-height: 250px;
     display: flex;
-    align-items: flex-end;
-    background: linear-gradient(90deg, #020617 0%, #0f172a 100%); 
+    align-items: flex-end; /* Texto alinhado na parte inferior do banner */
+    /* Gradiente moderno linear */
+    background: linear-gradient(90deg, #020617 0%, #0f172a 100%);
 }
 
 .hero-inner {
@@ -117,6 +129,7 @@ nav a {
     color: rgba(255,255,255,.85)
 }
 
+/* Badges (Etiquetas coloridas, ex: "Novo", "Beta") */
 .badge {
     display: inline-block;
     background: rgba(110,165,255,.18);
@@ -131,11 +144,15 @@ section {
     padding: 44px 0
 }
 
+/* GRID LAYOUT (Moderno) */
 .grid {
     display: grid;
     gap: 18px
 }
 
+/* GRID RESPONSIVO AUTOMÁTICO (Sem Media Queries):
+   Cria colunas automaticamente. Se a tela diminuir, as colunas caem para a linha de baixo.
+   minmax(250px, 1fr): A coluna tem no mínimo 250px, se sobrar espaço, ela cresce (1fr). */
 .cols-3 {
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr))
 }
@@ -144,13 +161,15 @@ section {
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr))
 }
 
+/* Estilo dos Cards (Containers de conteúdo) */
 .card {
-    background: var(--card);
-    border: 1px solid rgba(255,255,255,.04);
+    background: var(--card); /* Usa a variável semitransparente */
+    border: 1px solid rgba(255,255,255,.04); /* Borda sutil */
     border-radius: 16px;
     padding: 16px 18px
 }
 
+/* Tabelas do sistema */
 .table {
     width: 100%;
     border-collapse: collapse
@@ -167,15 +186,16 @@ section {
     color: var(--muted)
 }
 
+/* KPIs do Dashboard (Os números grandes no topo) */
 .kpi-row {
     display: flex;
     gap: 14px;
-    flex-wrap: wrap
+    flex-wrap: wrap /* Se faltar espaço, quebra linha */
 }
 
 .kpi {
-    flex: 1;
-    min-width: 180px;
+    flex: 1; /* Ocupa espaço igual */
+    min-width: 180px; /* Tamanho mínimo antes de quebrar linha */
     background: rgba(15,23,42,.5);
     border: 1px solid rgba(148,163,184,.08);
     border-radius: 14px;
@@ -192,6 +212,7 @@ section {
         display: block
     }
 
+/* Inputs estilizados para Dark Mode */
 input, select {
     background: rgba(15,23,42,.55);
     border: 1px solid rgba(148,163,184,.25);
@@ -202,12 +223,13 @@ input, select {
     margin-bottom: 10px;
 }
 
+/* Botões com Gradiente */
 .btn {
-    background: linear-gradient(140deg,#7ef0d2,#325fff);
+    background: linear-gradient(140deg,#7ef0d2,#325fff); /* Gradiente Verde -> Azul */
     border: none;
     border-radius: 10px;
     padding: 9px 14px;
-    color: #020617;
+    color: #020617; /* Texto escuro para contraste */
     font-weight: 600;
     cursor: pointer;
 }
@@ -232,25 +254,25 @@ input, select {
     font-size: 13px
 }
 
-
+/* Rodapé */
 footer {
     border-top: 1px solid rgba(255,255,255,.04);
     padding: 24px 0;
     color: var(--muted);
-    
+    /* Garante que o footer fique no fim da página graças ao flex-grow do main */
     margin-top: auto;
 }
 
-    
+
     footer .container {
         margin: 0;
         max-width: 100%;
-        
         padding: 0 20px;
     }
 
-
+/* RESPONSIVIDADE (Mobile) */
 @media(max-width:720px) {
+    /* Em telas pequenas, o menu quebra linha e empilha os itens */
     .nav {
         flex-wrap: wrap;
         gap: 10px
@@ -260,6 +282,7 @@ footer {
         flex-wrap: wrap
     }
 
+    /* Diminui o tamanho do banner Hero */
     .hero {
         min-height: 210px
     }
@@ -269,10 +292,10 @@ footer {
         }
 }
 
-
+/* Logos */
 .header-logo {
-    height: 36px; 
-    width: auto; 
+    height: 36px;
+    width: auto;
     margin-right: 8px;
     vertical-align: middle;
 }
@@ -282,7 +305,7 @@ footer {
     align-items: center;
 }
 
-
+/* PÁGINA DE LOGIN */
 .login-logo {
     display: block;
     max-width: 150px;
@@ -290,18 +313,19 @@ footer {
     margin: 20px auto;
 }
 
+/* Fundo específico da tela de Login */
 .login-background {
-    background: url('/img/Banner.png') center/cover no-repeat;
+    background: url('/img/Banner.png') center/cover no-repeat; /* Imagem de fundo cobrindo tudo */
     min-height: 75vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centraliza o formulário verticalmente */
+    justify-content: center; /* Centraliza o formulário horizontalmente */
 }
 
-.login-background .card {
-    background: rgba(15, 23, 42, 0.95);
-}
+    .login-background .card {
+        background: rgba(15, 23, 42, 0.95); /* Cartão mais escuro para leitura */
+    }
 
-.login-background .card h2 {
-    text-align: center;
-}
+        .login-background .card h2 {
+            text-align: center;
+        }

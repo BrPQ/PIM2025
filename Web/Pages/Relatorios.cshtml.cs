@@ -15,30 +15,25 @@ using System.Threading.Tasks;
 
 namespace PIMIIIWeb_SQL_Login.Pages
 {
-    
+    // DTO para exibir a tabela na tela.
     public class TicketRelatorioVm
     {
-        [JsonPropertyName("id")]
-        public int Id { get; set; }
-        [JsonPropertyName("titulo")]
-        public string Titulo { get; set; }
-        [JsonPropertyName("status")]
-        public string Status { get; set; }
-        [JsonPropertyName("dataAbertura")]
-        public DateTime DataAbertura { get; set; }
-        [JsonPropertyName("profissionalDesignado")]
-        public string? ProfissionalDesignado { get; set; }
-        [JsonPropertyName("dataFinalizacao")]
-        public DateTime? DataFinalizacao { get; set; }
+        [JsonPropertyName("id")] public int Id { get; set; }
+        [JsonPropertyName("titulo")] public string Titulo { get; set; }
+        [JsonPropertyName("status")] public string Status { get; set; }
+        [JsonPropertyName("dataAbertura")] public DateTime DataAbertura { get; set; }
+        [JsonPropertyName("profissionalDesignado")] public string? ProfissionalDesignado { get; set; }
+        [JsonPropertyName("dataFinalizacao")] public DateTime? DataFinalizacao { get; set; }
     }
 
-    [Authorize(Roles = "Gestor, Admin, Tecnico")] 
+    // Acesso permitido para todo mundo (Gestor, Admin, Tecnico).
+    [Authorize(Roles = "Gestor, Admin, Tecnico")]
     public class RelatoriosModel : PageModel
     {
         public List<TicketRelatorioVm> Tickets { get; set; } = new();
         public string MensagemErro { get; private set; }
 
-        
+        // URL para gerar o botão de download direto (se necessário).
         public string ExportUrl { get; set; }
 
         private readonly IHttpClientFactory _httpClientFactory;
@@ -52,6 +47,7 @@ namespace PIMIIIWeb_SQL_Login.Pages
             _httpContextAccessor = httpContextAccessor;
         }
 
+        // --- MÉTODO GET (Carregar Tabela) ---
         public async Task OnGetAsync()
         {
             var client = await CreateAuthenticatedClientAsync();
@@ -66,6 +62,7 @@ namespace PIMIIIWeb_SQL_Login.Pages
 
             try
             {
+                // Busca apenas o histórico (Finalizados/Cancelados).
                 var apiUrl = baseUrl + "/api/tickets/relatorio";
                 Tickets = await client.GetFromJsonAsync<List<TicketRelatorioVm>>(apiUrl);
             }
@@ -75,6 +72,7 @@ namespace PIMIIIWeb_SQL_Login.Pages
             }
         }
 
+        // Helper de autenticação (padrão).
         private async Task<HttpClient> CreateAuthenticatedClientAsync()
         {
             var token = _httpContextAccessor.HttpContext.Session.GetString("jwt");
@@ -88,24 +86,26 @@ namespace PIMIIIWeb_SQL_Login.Pages
             return client;
         }
 
+        // --- MÉTODO POST (Baixar Excel) ---
+        // Executado quando o usuário clica no botão "Exportar Excel".
         public async Task<IActionResult> OnPostExportarExcelAsync()
         {
             var client = await CreateAuthenticatedClientAsync();
-            if (client == null)
-            {
-                return Page();
-            }
+            if (client == null) return Page();
 
             try
             {
+                // 1. Chama o endpoint da API que gera o Excel (aquele com ClosedXML).
                 var apiUrl = _configuration["ApiSettings:BaseUrl"] + "/api/tickets/exportar-excel";
-
                 var response = await client.GetAsync(apiUrl);
 
                 if (response.IsSuccessStatusCode)
                 {
+                    // 2. Lê os bytes do arquivo que veio da API.
                     var fileBytes = await response.Content.ReadAsByteArrayAsync();
 
+                    // 3. Entrega o arquivo para o navegador do usuário baixar.
+                    // Define o MIME Type correto para planilhas .xlsx.
                     return File(
                         fileBytes,
                         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -113,13 +113,13 @@ namespace PIMIIIWeb_SQL_Login.Pages
                 }
 
                 MensagemErro = "Erro ao gerar o relatório: " + response.ReasonPhrase;
-                await OnGetAsync(); 
+                await OnGetAsync();
                 return Page();
             }
             catch (HttpRequestException ex)
             {
                 MensagemErro = "Erro de conexão com a API: " + ex.Message;
-                await OnGetAsync(); 
+                await OnGetAsync();
                 return Page();
             }
         }

@@ -1,85 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|c:\\users\\breni\\desktop\\unip\\4_sem\\pim\\pim\\pages\\dashboards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D50281FB-B54C-F05B-39ED-E90AD92ABC90}|PIMIIIWeb_SQL_Login.csproj|solutionrelative:pages\\dashboards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Login.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Login.cshtml",
-              "RelativeToolTip": "Pages\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-17T13:41:12.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAABABAAAAAAAAAAAswB4BAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-17T13:10:53.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-17T13:27:35.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dashboards.cshtml",
-              "DocumentMoniker": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Dashboards.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Dashboards.cshtml",
-              "ToolTip": "C:\\Users\\breni\\Desktop\\UNIP\\4_SEM\\PIM\\Pim\\Pages\\Dashboards.cshtml",
-              "RelativeToolTip": "Pages\\Dashboards.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-17T13:08:22.576Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

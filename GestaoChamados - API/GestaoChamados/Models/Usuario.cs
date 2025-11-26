@@ -1,35 +1,53 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations; 
-using System.ComponentModel.DataAnnotations.Schema; 
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GestaoChamados.Models 
+namespace GestaoChamados.Models
 {
-    [Table("Usuarios")] 
+    // [Table("Usuarios")]: Garante que a tabela se chame "Usuarios" (plural) no SQL.
+    [Table("Usuarios")]
     public class Usuario
     {
-        [Key] // Diz que esta é a Chave Primária
-        [Column("UsuarioId")] // Mapeia a propriedade 'Id' para a coluna 'UsuarioId'
+        // Chave Primária.
+        [Key]
+        // Mapeamento: No C# usamos "Id" (padrão limpo), no Banco é "UsuarioId".
+        [Column("UsuarioId")]
         public int Id { get; set; }
 
-        [Column("Nome")] // Mapeia a propriedade 'NomeUsuario' para a coluna 'Nome'
+        // Mapeamento: No C# é "NomeUsuario", no Banco é apenas "Nome".
+        [Column("Nome")]
         public string NomeUsuario { get; set; }
 
-        [Column("Senha")] // Mapeia a propriedade 'SenhaHash' para a coluna 'Senha'
+        // *** PONTO CRÍTICO DE SEGURANÇA ***
+        // No Banco, a coluna chama-se "Senha".
+        // No C#, chamamos de "SenhaHash" para lembrar o programador, toda vez que ele ler o código,
+        // que aquilo NÃO É a senha original (123456), mas sim o hash criptografado ($2a$10$...).
+        // É uma técnica de "Clean Code" (Código Limpo) através da nomenclatura.
+        [Column("Senha")]
         public string SenhaHash { get; set; }
 
-        [Column("Perfil")] // Mapeia a propriedade 'Role' para a coluna 'Perfil'
+        // Mapeamento: Inglês no C# (Role) vs Português no Banco (Perfil).
+        // Role armazena "Admin", "Tecnico", etc.
+        [Column("Perfil")]
         public string Role { get; set; }
 
+        // Identificador único de login (Matrícula da faculdade/empresa).
         [Column("Matricula")]
         public string Matricula { get; set; }
 
+        // Flag de "Soft Delete" (Exclusão Lógica).
+        // Se precisarmos demitir/bloquear um usuário, nós NÃO deletamos a linha do banco
+        // (senão perderíamos o histórico dos chamados que ele atendeu).
+        // Nós apenas mudamos Ativo = false. O sistema de login verifica isso antes de deixar entrar.
         [Column("Ativo")]
         public bool Ativo { get; set; }
 
         [Column("DataCadastro")]
         public DateTime DataCadastro { get; set; }
 
-        [Column("Email")] 
+        // Campo Opcional (Nullable).
+        // O sistema funciona mesmo se o usuário não tiver e-mail cadastrado.
+        [Column("Email")]
         public string? Email { get; set; }
     }
 }
